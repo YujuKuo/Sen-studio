@@ -1,0 +1,131 @@
+@import "../custom/index";
+
+$bannerHeight : 90vh;
+
+header{
+    position: relative;
+    .bi-arrow-down, 
+    .bi-instagram{
+        position: absolute;
+        bottom: 60px;
+        z-index: 2;
+        height: 92px;
+        font-size: $fingerBtnSize;
+        @include mobile{
+            font-size: $mobileBtnSize;
+        }
+    }
+    .bi-arrow-down{
+        left: 2rem;
+    }
+    .bi-instagram{
+        right: 2.5rem;
+        color: $white;
+        &:hover,
+        &:focus {
+        transform: translateY(-0.25em);
+        }
+        @include pad{
+            color: $black;
+        }
+    }
+}
+.keyVision{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    div{
+        height: $bannerHeight;
+        @include pad{
+            width: 100vw;
+        }
+    }
+    img[alt="SenLogo"]{
+        width: 12vw;
+        @include padPro{
+            width: 20vw;
+        }
+        @include pad{
+            width: 24vw;
+        }
+        @include mobile(){
+            width: 40vw;
+        }
+    }      
+    h6{
+        writing-mode: vertical-lr;
+        margin: 0;
+    }
+}
+.banner{
+    width: $full;
+    height: $bannerHeight;
+    overflow: hidden;
+    position: relative;
+    .banner_img, div{
+        position: absolute;
+    }
+    .banner_img{
+        width: $full;
+        object-fit: contain;
+        bottom: -300px;
+        margin: 0 auto;
+        @include padPro{
+            bottom: 0px;
+            left: -15vw;
+            width: 130%;
+        }
+        @include pad{
+            left: -25vw;
+            bottom: -160px;
+            width: 150%;
+        }
+        @include mobile{
+            bottom: 0;
+            width: 200%;
+            left: -50vw;
+        }
+    }
+    .banner_mask{
+        background-color: $white;
+        opacity: .7;
+        width: 50%;
+        height: $bannerHeight;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        @include pad{
+            width: 100%;
+        }
+    }
+}
+nav{
+    margin: 0;
+    padding: 0;
+    a{
+        letter-spacing: $baseLetterSpacing;
+    }
+}
+.navbar{
+    // width: 100vw;
+    margin: .5rem 0;
+    background-color: rgba($white,.9);
+    border-bottom: 1px solid $gray;
+    padding: 0 .5rem;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    &:focus,
+    &:active{
+        outline: none;
+        box-shadow: none;
+    }
+}
+.navbar-toggler-icon{
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+

@@ -1,0 +1,817 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+}
+
+header .bi-arrow-down,
+header .bi-instagram {
+  position: absolute;
+  bottom: 60px;
+  z-index: 2;
+  height: 92px;
+  font-size: 45px;
+}
+
+@media (max-width: 576px) {
+  header .bi-arrow-down,
+  header .bi-instagram {
+    font-size: 42px;
+  }
+}
+
+header .bi-arrow-down {
+  left: 2rem;
+}
+
+header .bi-instagram {
+  right: 2.5rem;
+  color: white;
+}
+
+header .bi-instagram:hover, header .bi-instagram:focus {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+@media (max-width: 768px) {
+  header .bi-instagram {
+    color: black;
+  }
+}
+
+.keyVision {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.keyVision div {
+  height: 90vh;
+}
+
+@media (max-width: 768px) {
+  .keyVision div {
+    width: 100vw;
+  }
+}
+
+.keyVision img[alt="SenLogo"] {
+  width: 12vw;
+}
+
+@media (max-width: 1024px) {
+  .keyVision img[alt="SenLogo"] {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .keyVision img[alt="SenLogo"] {
+    width: 24vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .keyVision img[alt="SenLogo"] {
+    width: 40vw;
+  }
+}
+
+.keyVision h6 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  margin: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner .banner_img, .banner div {
+  position: absolute;
+}
+
+.banner .banner_img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: -300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .banner .banner_img {
+    bottom: 0px;
+    left: -15vw;
+    width: 130%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .banner_img {
+    left: -25vw;
+    bottom: -160px;
+    width: 150%;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner .banner_img {
+    bottom: 0;
+    width: 200%;
+    left: -50vw;
+  }
+}
+
+.banner .banner_mask {
+  background-color: white;
+  opacity: .7;
+  width: 50%;
+  height: 90vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .banner .banner_mask {
+    width: 100%;
+  }
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  letter-spacing: 0.1rem;
+}
+
+.navbar {
+  margin: .5rem 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0 .5rem;
+}
+
+.navbar-toggler:focus:focus, .navbar-toggler:focus:active,
+.navbar-toggler:active:focus,
+.navbar-toggler:active:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.certification_wrap {
+  margin: 1rem auto;
+}
+
+.certification_wrap img {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#workshops {
+  background-color: #e1e1e1;
+}
+
+#workshops .row {
+  overflow-x: scroll;
+}
+
+.card {
+  background-color: black;
+  width: 350px;
+  height: 25rem;
+  margin: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+.card:hover {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+}
+
+.card:hover h5, .card:hover p {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 350px;
+  }
+}
+
+.card h5, .card p {
+  color: white;
+}
+
+.card .card-header {
+  margin-top: 1rem;
+  background-color: transparent;
+  border-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.card .card-body {
+  padding-bottom: 1.5rem;
+}
+
+.card .card-body .card-title {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#about {
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+#about .flex-white,
+#about .flex-black {
+  padding: 5rem;
+}
+
+#about .flex-black {
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  #about .flex-black {
+    padding: 40px;
+    padding-top: 20px;
+  }
+}
+
+#about .flex-white {
+  background-color: white;
+}
+
+#about .flex-white img {
+  width: 12rem;
+}
+
+@media (max-width: 576px) {
+  #about .flex-white {
+    padding: 40px;
+  }
+}
+
+#about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 119.039px;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  #about:before {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 0.15rem;
+}
+
+h2 {
+  font-size: 19.2px;
+  letter-spacing: 0.1rem;
+}
+
+h3 {
+  font-size: 28.8px;
+  letter-spacing: 0.1rem;
+}
+
+h4 {
+  font-size: 25.6px;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  font-size: 22.4px;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  font-size: 20.8px;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+}
+
+span {
+  font-size: 15.2px;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+
+header, section, footer, .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+#app {
+  width: 100vw;
+}
+
+h2 {
+  margin: 3rem auto 3rem 0;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+#certification,
+#workshops {
+  padding-bottom: 3rem;
+}
+
+#workshops,
+#about {
+  width: 100vw;
+  overflow: hidden;
+}
+
+footer p {
+  margin: 1rem;
+  color: #e1e1e1;
+}
+/*# sourceMappingURL=all.css.map */

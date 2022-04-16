@@ -1,0 +1,113 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+$white: white;
+$black: black;
+$gray: #e1e1e1;
+$none : 0;
+$full : 100%;
+$backColor: #e1e1e1;
+
+// font
+$baseFontSize: 16px;
+$baseLetterSpacing: .1rem;
+$bigLetterSpacing: .15rem;
+@function newFontSize($size) {
+  @return $baseFontSize * $size;
+}
+h1 {
+  font-size: newFontSize(1.5);
+  letter-spacing: $bigLetterSpacing;
+}
+h2 {
+  font-size: newFontSize(1.2);
+  letter-spacing: $baseLetterSpacing;
+}
+h3 {
+  font-size: newFontSize(1.8);
+  letter-spacing: $baseLetterSpacing;
+}
+h4 {
+  font-size: newFontSize(1.6);
+  letter-spacing: $baseLetterSpacing;
+}
+h5 {
+  font-size: newFontSize(1.4);
+  letter-spacing: $baseLetterSpacing;
+}
+h6 {
+  font-size: newFontSize(1.3);
+  letter-spacing: $baseLetterSpacing;
+}
+p {
+  font-size: newFontSize(1);
+  letter-spacing: $baseLetterSpacing;
+}
+span {
+  font-size: newFontSize(0.95);
+  letter-spacing: $baseLetterSpacing;
+}
+// button
+$thumbBtnSize: 72px;
+$baseBtnSize: 60px;
+$fingerBtnSize: 45px;
+$mobileBtnSize: 42px;
+// rwd
+@mixin padPro{
+  @media(max-width:1024px){
+      @content;
+  }
+  };
+
+@mixin pad{
+@media(max-width:768px){
+  @content;
+}
+};
+
+@mixin mobile{
+@media(max-width:576px){
+  @content;
+}
+};
+body{
+    font-family: 'Dosis', sans-serif, 'Noto Sans TC', sans-serif, 'VT323', monospace;
+}
+header, section, footer, .container-fluid{
+    // border: 1px solid red;
+    padding: $none;
+    margin: $none;
+}
+button{
+  &:focus{
+    outline: none !important;
+  }
+}
+// padding space
+.container{
+  padding: 0;
+}
+// margin space
+.row{
+  margin: 0;
+}
+// main
+#app{
+  width: 100vw;
+  // overflow: hidden;
+}
+h2{
+  margin: 3rem auto 3rem 0;
+  @include mobile{
+    margin-left: 1.5rem;
+  }
+}
+#certification,
+#workshops{
+  padding-bottom: 3rem;
+}
+#workshops,
+#about{
+  width: 100vw;
+  overflow: hidden;
+}
+

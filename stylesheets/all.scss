@@ -1,0 +1,13 @@
+// 在scss中.scss可以不要寫
+
+// @import "./bootstrap/functions";
+// @import "./bootstrap/variables";
+// @import "./bootstrap/utilities";
+@import "./custom/index";
+@import "./custom/header";
+@import "./custom/certification";
+@import "./custom/workshops";
+@import "./custom/about";
+@import "./custom/footer";
+// @import "../custom/certification";
+// @import "./bootstrap/bootstrap";

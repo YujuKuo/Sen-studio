@@ -1,0 +1,46 @@
+@import "../custom/index";
+
+#workshops{
+    background-color: $backColor;
+    .row{
+        overflow-x: scroll;
+    }
+}
+.card{
+    background-color: $black;
+    width: 350px;
+    height: 25rem;
+    margin: 1rem;
+    transition: .5s;
+    color: $white;
+    &:hover {
+        border: 1px solid $black;
+        background-color: transparent;
+        color: $black;
+        h5,p{
+            color: $black;  
+        }
+    }
+    // @include pad{
+    //     width: 150%;
+    // }
+    @include padPro{
+        width: 350px;
+    }
+    h5, p{
+        color: $white;
+    }
+    .card-header{
+        margin-top: 1rem;
+        background-color: transparent;
+        border-bottom: 0;
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .card-body{
+        padding-bottom: 1.5rem;
+        .card-title{
+            padding-bottom: 1rem;
+        }
+    }
+}

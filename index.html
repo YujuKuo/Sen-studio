@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sen Studio</title>
+    <!-- bootstrap5  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <!-- vue3 -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header class="container-fluid">
+            <!-- arrowDown -->
+            <i class="bi bi-arrow-down"></i>
+            <!--keyVision: Sen personal trainer -->
+            <div class="keyVision col-lg-6 col-md-12">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/SenLogo.png" alt="SenLogo">
+                    <h6>Personal Trainer</h6>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="banner">
+                <div class="banner_mask"></div>
+                <img class="banner_img" src="./img/coach.jpg" alt="background">
+            </div>
+            <!-- social media button -->
+            <div class="icon_ig">
+                <i class="bi bi-instagram" @click="toIG"></i>
+            </div>
+        </header>
+        <!-- nav -->
+        <div class="container-fluid sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="#app">
+                        <h1>SEN STUDIO</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#app">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#certification">Certification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#workshops">Workshops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- certification -->
+        <section id="certification" class="container-fluid">
+            <div class="container">
+                <h2>CERTIFICATION</h2>
+                <div class="certification_wrap text-center col-sm-10">
+                    <img src="/img/ACE.png" alt="ACE certification">
+                    <p>ACE-CPT 國際私人教練證照</p>
+                </div>
+            </div>
+        </section>
+        <!-- workshops -->
+        <section id="workshops" class="container-fluid">
+            <div class="container">
+                <h2>WORKSHOPS</h2>
+                <div class="row flex-nowrap">
+                    <div class="card col-xl-3 " v-for="(item, index) in cardWork">
+                        <div class="card-header" v-html="item.cardHeader"></div>
+                        <div class="card-body text-dark row align-content-end">
+                            <h5 class="card-title align-self-end" v-html="item.cardBody"></h5>
+                            <p class="card-text align-self-end" v-html="item.cardFooter"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about" class="container-fluid">
+            <div class="container">
+                <h2>ABOUT</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 flex-column flex-black">
+                    <div class="d-flex justify-content-around align-items-start">
+                        <div v-html="cv"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 flex-white d-flex justify-content-center align-items-center">
+                    <img src="./img/SenLogo.png" alt="SenLogo">
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="text-center">
+            <p>Copyright © 2022 YujuKuo. All rights reserved. </p>
+        </footer>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./stylesheets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        Vue.createApp({
+            // data 函式
+            data: function () {
+                // 一定是用 return
+                return {
+                    cardWork: [
+                        {
+                            cardHeader: '01',
+                            cardBody: 'BUMP & BEYOND - <br/> TRAINING <br/> PREGNANT <br/> AND <br/> POSTPARTUM <br/> CLIENT',
+                            cardFooter: '懷孕及產後婦女訓練',
+                        },
+                        {
+                            cardHeader: '02',
+                            cardBody: 'HIIT - <br/> INSTRUCTOR <br/> TRANING',
+                            cardFooter: '間歇訓練',
+                        },
+                        {
+                            cardHeader: '03',
+                            cardBody: 'IKFF - <br/> LEVEL 1 <br/> CERTIIFIED <br/> KETTLEBELL <br/> TEACHER',
+                            cardFooter: '壺鈴訓練',
+                        },
+                        {
+                            cardHeader: '04',
+                            cardBody: 'SMTP - <br/> ELEMENTARY <br/>SPORT <br/>MASSAGIST',
+                            cardFooter: '運動按摩',
+                        },
+                        {
+                            cardHeader: '05',
+                            cardBody: 'PNF - <br/> PROPRIOCEPTIVE  <br/> NEUROMUSCULAR <br/> FACILITATION',
+                            cardFooter: '神經肌肉骨骼誘發術',
+                        }
+                    ],
+                    cv: "長榮大學營養系 畢業<br/><br/>全真教練 2年<br/>超越健身教練 2年<br/><br/>擅長：<br/>TRX訓練<br/>肌力訓練<br/>功能性調整<br/>孕期及產後恢復",
+                }
+
+
+            },
+            // methods 方法
+            methods: {
+                toIG() {
+                    window.open('https://www.instagram.com/how.sen.life/?utm_medium=copy_link}')
+                }
+
+            },
+            // mounted 函式
+            mounted: function () {
+
+            },
+        }).mount('#app');
+    </script>
+    <!-- <script>
+        $(document).ready(function () {
+            $($(this).attr("href")).click(function () {
+                console.log('hi')
+                $("html, body").animate({
+                    scrollTop: $(this.value).offset().top
+                }, { duration: 500, easing: "swing" });
+                return false;
+            });
+        });
+    </script> -->
+</body>
+
+</html>

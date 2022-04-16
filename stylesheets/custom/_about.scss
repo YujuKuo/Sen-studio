@@ -1,0 +1,38 @@
+@import "../custom/index";
+#about{
+    background-color: $black;
+    color: $white;
+    position: relative;
+    .flex-white,
+    .flex-black{
+        padding: 5rem;
+    }
+    .flex-black{
+        background-color: $black;  
+        @include mobile{
+            padding: 40px;
+            padding-top: 20px;
+        }
+    }
+    .flex-white{
+        background-color: $white;
+        img{
+            width: 12rem;
+        }
+        @include mobile{
+            padding: 40px;
+        }
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 119.039px;
+        background-color: #fff;
+        @include mobile{
+            display: none;
+        }
+    }
+}
